@@ -1,5 +1,7 @@
 {
   "name": "APP_AGRIMARKET",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

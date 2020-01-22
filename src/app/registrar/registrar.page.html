@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button  color="secondary" defaultHref="/productor">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>REGISTRAR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card-content>
+    <ion-card-title size="large">DATOS PERSONALES</ion-card-title>
+  </ion-card-content>
+
+  <ion-avatar >                     
+    <img class='avatar' src="assets/imagenes/datos-personales.png">
+  </ion-avatar> 
+
+<ion-list lines="none">
+  <ion-list-header>
+  <ion-item>
+    <ion-icon slot="start" color="succes" name="person"></ion-icon>
+    <ion-label position="floating">Correo</ion-label>
+    <ion-input [(ngModel)]= "user.email" ></ion-input>
+  </ion-item>
+  </ion-list-header>
+
+  <ion-list-header>
+  <ion-item>
+    <ion-icon slot="start" color="succes" name="person-add"></ion-icon>
+    <ion-label position="floating" >Contraseña</ion-label>
+    <ion-input  type = "password" [(ngModel)]= "user.password" ></ion-input>
+  </ion-item>
+  </ion-list-header>
+
+  <ion-list-header>
+  <ion-item>
+    <ion-icon slot="start" color="succes" name="call"></ion-icon>
+    <ion-label position="floating">Teléfono</ion-label>
+    <ion-input ngModel name="lName"></ion-input>
+  </ion-item>
+  </ion-list-header>
+</ion-list>
+
+
+<ion-button size="small" expand="block" type="submit" color="secondary" (click)="onRegister()" >Registrar</ion-button>
+
+
+</ion-content>

@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button color="secondary" defaultHref="/productor">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>PUBLICAR PRODUCTOS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card-content>
+    <ion-card-title size="large">DATOS PRODUCTOS</ion-card-title>
+  </ion-card-content>
+
+  <ion-list lines="none">
+    <ion-list-header>
+    <ion-item>
+      <ion-icon slot="start" color="succes" name="list-box"></ion-icon>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input ngModel name="fName"></ion-input>
+    </ion-item>
+    </ion-list-header>
+  
+    <ion-list-header>
+    <ion-item>
+      <ion-icon slot="start" color="succes" name="logo-usd"></ion-icon>
+      <ion-label position="floating">Precio</ion-label>
+      <ion-input ngModel name="lName"></ion-input>
+    </ion-item>
+    </ion-list-header>
+  
+    <ion-list-header>
+    <ion-item>
+      <ion-icon slot="start" color="succes" name="photos"></ion-icon>
+      <ion-label position="floating">Publicar Imagen</ion-label>
+      <ion-input ngModel name="lName"></ion-input>
+      <ion-card>
+              <img class="i" src="assets/imagenes/chola.jpg"/>
+      </ion-card>
+    </ion-item>
+    </ion-list-header>
+  
+    <ion-list-header>
+    <ion-item>
+      <ion-icon slot="start" color="succes" name="paper"></ion-icon>
+      <ion-label position="floating">Detalle</ion-label>
+      <ion-input ngModel type="email" name="email"></ion-input>
+    </ion-item>
+    </ion-list-header>
+  
+  </ion-list>
+
+  <ion-button size="small" expand="block" type="submit" color="secondary">PUBLICAR</ion-button>
+  
+
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button color="secondary" defaultHref="/inicio">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalles del Producto </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card-content>
+    <ion-card-title size="large">INFORMACION DEL PRODUCTO</ion-card-title>
+  </ion-card-content>
+
+  <ion-avatar>
+    <img class='avatar' src="assets/imagenes/info_prod.png">
+  </ion-avatar>
+
+  <ion-content padding>
+    <ion-list lines="full">
+      <ion-item *ngIf="todo">
+        <ion-input required type="text" placeholder="nombre" [(ngModel)]
+        ="todo.nombre"></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="todo">
+        <ion-input required type="text" placeholder="precio" [(ngModel)]
+        ="todo.precio"></ion-input> </ion-item>
+
+      <ion-item *ngIf="todo">
+        <ion-input required type="text" placeholder="detalle" [(ngModel)]
+        ="todo.detalle"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-button size="small" expand="block" type="submit" color="secondary" routerLink="/chat-linea">CONTÁCTAME
+    </ion-button>
+  </ion-content>
